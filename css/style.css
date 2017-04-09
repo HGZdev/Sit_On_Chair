@@ -1,20 +1,21 @@
 @font-face {
-    font-family: 'ralewayregular';
+    font-family: 'raleway';
     font-weight: normal;
     font-style: normal;
 
-    src: url('raleway-regular-webfont.woff2') format('woff2'), url('raleway-regular-webfont.woff') format('woff');
+
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'), url('../fonts/raleway-regular-webfont.woff') format('woff');
 }
 
 * {
     box-sizing: border-box;
     margin: auto;
     padding: 0;
-     border: green solid 1px;
+     /*border: green solid 1px;*/
 }
 
 body {
-    font-family: 'ralewayregular', sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 10px;
 }
 
@@ -73,7 +74,6 @@ header .logo span {
     /*Pozwala definiować padding pionowy*/
     display: block;
     padding: 5px 15px;
-
     text-decoration: none;
     color: white;
     font-size: 0.9rem;
@@ -87,7 +87,6 @@ header .logo span {
     /*Pozycja tuż pod mainMenu z odstępem na wskaźnik*/
     top: calc(100% + 10px);
     left: 0;
-
     /*Domyślny stan ukryty przed kliknięciem*/
     display: none;
     background-color: black;
@@ -98,7 +97,6 @@ header .logo span {
     position: absolute;
     top: -20px;
     left: 35%;
-
     /*Istnieją wszystkie bordery, ale tylko dolny jest widoczny w postaci trójkąta*/
     width: 0;
     height: 0;
@@ -106,22 +104,21 @@ header .logo span {
     border-bottom: 10px solid black;
 }
 
+
 /*Wyświetla subMenu znajdujące się tuż pod klikniętym tagiem "a" (nie chodzi o zagnieżdżenie, tylko kolejność w kodzie)*/
+
 .hasChildren a:focus+.subMenu {
     display: block;
 }
 
-
 .slider {
-   /* Użycie opcji absolute/relativr w sliderze zakrywa nasze subMenu (stojące nieco wyżej na stronie). Żeby je odkryć trzeba nadać mu wyższy z-indeks. Np. 99999*/
+    /* Użycie opcji absolute/relativr w sliderze zakrywa nasze subMenu (stojące nieco wyżej na stronie). Żeby je odkryć trzeba nadać mu wyższy z-indeks. Np. 99999*/
     position: relative;
-
     background: linear-gradient( white 60%, #BFBFBF);
 }
 
 article {
     float: left;
-
     text-align: center;
 }
 
@@ -129,13 +126,12 @@ article {
     /*Manipulujemy względem conteinera relative. Elementy z float wjeżdżają pod spód absolute.*/
     position: absolute;
     top: calc(50% - 25px);
-
     color: #27c7ab;
     /*Typ button ma wiele predefiniowanych elementów do neutrlaizacji np. boarder*/
     border: none;
     background-color: transparent;
-
-    font-size: 5rem;;
+    font-size: 5rem;
+    ;
     font-weight: 300;
 }
 
@@ -148,8 +144,8 @@ article {
 }
 
 .slider_img {
-  width: 50%;
-  padding: 60px 0 0 0;
+    width: 50%;
+    padding: 60px 0 0 0;
 }
 
 .slider_txt {
@@ -163,31 +159,27 @@ article {
 
 .slider h1 {
     padding: 40px 0 40px 0;
-
     font-size: 2.5rem;
     font-weight: 300;
 }
 
 .slider p {
-  font-size: 0.9rem;
-  line-height: 1.5em;
-  color: dimgrey;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    color: dimgrey;
 }
 
 .slider span {
     color: #27c7ab;
-
     font-weight: 900;
 }
 
 .button {
     position: relative;
-
     width: 200px;
     height: 40px;
-    /*T nie da się paddingiem*/
+    /*Tego nie da się paddingiem*/
     margin-top: 20px;
-
     border-radius: 5px;
     background-color: #27c7ab;
 }
@@ -197,22 +189,235 @@ article {
     top: 50%;
     left: 50%;
     width: 100%;
-
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     text-decoration: none;
-
     color: white;
-
     font-size: 1rem;
     font-weight: 400;
 }
 
 .content article {
     width: 33.3333%;
-    padding: 15px;
+    padding: 10px;
+    position: relative;
+    text-align: left;
 }
 
 .content img {
     width: 100%;
+}
+
+.content h3 {
+    position: absolute;
+    width: calc(100% - 20px);
+    font-size: 1rem;
+    padding: 15px 0 25px 10px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.content_img h3 {
+    bottom: 30px;
+}
+
+.content h3:before {
+    position: absolute;
+    bottom: 15px;
+    left: 8px;
+    /*top: 0;*/
+    /*right: 0;*/
+
+    width: 150px;
+    height: 8px;
+    margin: auto;
+
+    content: "";
+
+    background-color: #27c7ab;
+}
+
+.content_txt p {
+    padding: 10px 10px;
+
+    color: dimgrey;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+.content_txt h3+p {
+    padding: 60px 0 0 10px;
+}
+
+
+
+.prices {
+    background-color: #EEEEEE;
+}
+
+.cennik {
+    padding: 30px 0 50px 0;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.cennik:before {
+    position: absolute;
+    top: 65px;
+    /*left: 8px;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+
+    width: 33.3333%;
+    height: 8px;
+    margin: auto;
+
+    content: "";
+
+    background-color: #27c7ab;
+}
+
+.cennik:after, .cennik:before {
+    display: table;
+    clear: both;
+
+    content: " ";
+}
+
+.price_plan {
+    position: relative;
+
+    float: left;
+
+    width: 33.3333%;
+    padding: 10px;
+
+    font-size: 1.4rem;
+    text-align: center;
+
+    color: grey;
+}
+
+.border {
+    border: solid grey 3px;
+    background-color: white;
+}
+
+.checked .border {
+ border: solid #27c7ab 3px;
+ background-color: #27c7ab;
+}
+
+.circle_out {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    transform: translateX(-50%);
+
+    border: solid grey 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.checked .circle_out{
+  background-color: #27c7ab;
+  border: solid #27c7ab 3px;
+}
+
+.checked .circle_in {
+  background-color: white;
+  border: solid white 3px;
+}
+
+.circle_in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 20px;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.price_plan h1 {
+    padding: 20px 0;
+
+    color: #27c7ab;
+
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.checked h1 {
+    color: white;
+}
+
+.price_info {
+    position: relative;
+
+    width: 110px;
+    height: 110px;
+
+    border: grey 1px solid;
+    border-radius: 50%;
+
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+}
+
+.checked .price_info {
+    background-color: white;
+    color: #27c7ab;
+}
+
+.price_info p {
+    position: relative;
+    display: block;
+    top: 15%;
+    font-weight: 700;
+}
+
+.price_info span {
+    font-size: 2.5rem;
+    line-height: 50px;
+    vertical-align: top;
+}
+
+.price_plan>.border>p {
+    padding: 5px;
+    background-color: #DBDBDB;
+}
+
+.price_plan>.border>p:nth-child(2n+1) {
+    background-color: #E8E8E8;
+}
+
+.checked.price_plan>.border>p:nth-child(2n) {
+    background-color: white;
+}
+
+.price_plan .button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.basic .button {
+    margin-top: calc(30px + 2 * 36.25px)
+}
+
+.checked .button {
+    background-color: white;
+    margin-top: calc(30px + 36.25px)
+}
+
+.checked .button a {
+    color: #27c7ab;
 }
