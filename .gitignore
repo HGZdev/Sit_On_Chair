@@ -1,0 +1,5 @@
+mode_modules
+node_modules/*
+webpack.config.js
+
+template.psd
