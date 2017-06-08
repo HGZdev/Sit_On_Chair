@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Zadanie 2 Ukrycie banneru - Metoda II - JS
 
-  var content_img = document.querySelectorAll('.content_img')[1]; // Drugi w tablicy...
+  var content_img = document.querySelectorAll('.content_img')[1];
   var element_h3 = content_img.querySelector('h3');
 
   content_img.addEventListener("mouseover", function(event) {
@@ -97,24 +97,21 @@ document.addEventListener("DOMContentLoaded", function() {
   checkbox_transport.addEventListener("change", function(event) {
     var name = summary.querySelector('.' + this.id);
     var value = summary.querySelector('.' + this.id + '.value')
-    // console.log(name, value); // test
 
     console.log(this.checked);
 
     if (this.checked) {
-      // this.checked = false; // Nie trzeba, gdyż sam event zmienia status checked
       name.innerText = this.id;
       value.innerText = this.dataset.price;
     } else {
-      // this.checked = true; // Nie trzeba, gdyż sam event zmienia status checked
       name.innerText = "";
       value.innerText = "";
     }
   })
 
 
-  form.addEventListener('click', function(event) { // Ten event wykonuje się przed checkbox_transport, ALE po list_li! DLACZEGO?
-    // event.preventDefault();
+  form.addEventListener('click', function(event) {
+    event.preventDefault();
     var total_price = 0;
     for (var j = 0; j < tab_value.length; j++) {
       total_price += Number(tab_value[j].innerText);
@@ -122,7 +119,5 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(total_price);
     sum.innerText = total_price;
   });
-
-
 
 });
