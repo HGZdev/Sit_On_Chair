@@ -1,5 +1,8 @@
 mode_modules
 node_modules/*
 webpack.config.js
+gulpfile.js
+package.json
+.gitignore
 
-template.psd
+images/template.psd

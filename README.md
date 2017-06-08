@@ -7,13 +7,13 @@ The project of an online furniture shop. My first website project made during pr
 
 ## Workshop tasks description:
 
-Celem tego warsztatu było, jak najwierniejsze odtworzenie warstwy wizualnej strony z pliku template.jpg.
+Celem tego warsztatu było wierne odtworzenie warstwy wizualnej strony z pliku template.jpg.
 
-Projekt miał również zawierać kilka funkcjonalności w poszczególnych sekcjach:
+Ponadto projekt miał zawierać kilka funkcjonalności w poszczególnych sekcjach:
 
 - Sekcja HEADER: drop-down menu
-- Sekcja BANNER: slider obrazów z krzesłami - nie korzystaj z żadnego gotowego slidera
-- Sekcja MIDDLE: po najechaniu na bloki ze zdjęciami - ma znikać
+- Sekcja BANNER: slider obrazów z krzesłami - bez użycia gotowego slidera
+- Sekcja MIDDLE: po najechaniu na bloki ze zdjęciami - mają one znikać
 - Sekcja WYBORU KRZESEŁ:
   - trzy listy drop-down z wyborem: KRZESŁA, KOLORU i TKANINY
   - listy mają się rozwijać i zwijać po kliknięciu na strzałkę

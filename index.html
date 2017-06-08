@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sit on chair</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
@@ -45,7 +45,7 @@
         <button type='button' name='button' class="prev"><</button>
 
         <article class='slider_img'>
-          <img src="./images/black_chair.png" alt="chair">
+          <img src="./images/black_chair.png" alt="chair" data-index="0">
         </article>
         <article class="slider_txt">
           <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
@@ -123,7 +123,6 @@
             <p>
               Serwis
             </p>
-
             <div class='button'>
               <a href="#">
               DOŁĄCZ
@@ -140,7 +139,7 @@
             <h1>BASIC PLAN</h1>
             <div class="price_info">
               <p>
-                <span>85</span>99
+                <span>95</span>99
               </p>
               <p>
                 PLN/MSC
@@ -172,7 +171,7 @@
             <h1>BASIC PLAN</h1>
             <div class="price_info">
               <p>
-                <span>85</span>99
+                <span>211</span>99
               </p>
               <p>
                 PLN/MSC
@@ -202,12 +201,123 @@
       </div>
     </section>
 
+    <section class="application">
+      <div class="main_width container">
+        <section class="choice_part inline">
+          <header>
+            <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+            <span class="green_bell"></span>
+          </header>
+
+          <div class="form">
+            <div class="drop_down_list">
+              <span class="list_label">Wybierz rodzaj</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel" id="title">
+                <li data-price='99'>Clair</li>
+                <li data-price='149'>Margarita</li>
+                <li data-price='199'>Selena</li>
+              </ul>
+            </div>
+            <div class="drop_down_list">
+              <span class="list_label">Wybierz kolor</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel" id='color'>
+                <li data-price='50'>Czerwony</li>
+                <li data-price='40'>Czarny</li>
+                <li data-price='20'>Pomarańczowy</li>
+              </ul>
+            </div>
+            <div class="drop_down_list" >
+              <span class="list_label">Wybierz materiał</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel" id="pattern">
+                <li data-price='0'>Tkanina</li>
+                <li data-price='47'>Skóra</li>
+              </ul>
+            </div>
+            <div class="checkbox check-box">
+              <input type="checkbox" id="transport" data-price="200">
+              <label for="transport">Transport</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="image_part inline">
+          <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+          <header class="align_right">
+            <h3>PODSUMOWANIE</h3>
+            <span class="green_bell"></span>
+          </header>
+
+          <div class="summary_panel">
+            <div class="panel_left">
+              <h4 class="title">Twój fotel</h4>
+              <span class="color"></span>
+              <span class="pattern"></span>
+              <span class="transport"></span>
+            </div>
+            <div class="panel_right">
+              <h4 class="title value"></h4>
+              <span class="color value"></span>
+              <span class="pattern value"></span>
+              <span class="transport value"></span>
+            </div>
+            <div class="sum_label">SUMA</div>
+            <div class="sum"><strong></strong></div>
+          </div>
+          <a href="" class="green_button">Zamawiam</a>
+        </section>
+      </div>
+    </section>
 
     <section class="contact">
+      <div class="container">
+        <h1 class="cennik">KONTAKT</h1>
+        <article class="form1">
+          <form>
+            <fieldset>
 
+              <input type="text" name="name" value="" placeholder="Imię">
+              <input type="email" placeholder="Email">
+              <textarea name="about" rows="3" cols="15" value="" placeholder="Wiadomość"></textarea>
+
+            </fieldset>
+          </form>
+        </article>
+
+        <article class="form2">
+          <form>
+            <img src="./images/red_chair.png" alt="chair" /> <br />
+            <img src="./images/form_ok.jpg" alt="checked" />
+            <p>Zgadzam się na przetwarzanie danych osobowych</p>
+            <button type="submit" id='submit' class="button">Wyślij</button>
+          </form>
+        </article>
+
+      </div>
     </section>
-    <footer></footer>
+    <footer class="container">
+      <p>
+        Copyright 2014 | All Right Reserved - Sit On Chair
+      </p>
 
+      <h1 class="logo">
+        SIT <span>ON</span> CHAIR
+      </h1>
+
+      <img src="./images/twitter.png" alt="twitter" />
+      <img src="./images/pinterest.png" alt="pinterest" />
+      <img src="./images/vimeo.png" alt="vimeo" />
+      <img src="./images/flickr.png" alt="flickr" />
+
+    </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
+    </script>
   </body>
 
 </html>
