@@ -1,5 +1,12 @@
 # Sit-On-Chair
 The project of an online furniture shop. My first website project made during programming bootcamp in CodersLab.
+
+Technologies used in this project:
+- HTML5
+- CSS3 & SASS
+- JavaScript
+- Gulp
+
 ## Live Demo:
  https://hgzwebdesign.github.io/Sit_On_Chair/
 ## Preview:
