@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   checkbox_transport.addEventListener("change", function(event) {
     var name = summary.querySelector('.' + this.id);
-    var value = summary.querySelector('.' + this.id + '.value')
+    var value = summary.querySelector('.' + this.id + '.value');
 
-    console.log(this.checked);
+    console.log(name, value); // test
 
     if (this.checked) {
       name.innerText = this.id;
@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   form.addEventListener('click', function(event) {
-    event.preventDefault();
     var total_price = 0;
     for (var j = 0; j < tab_value.length; j++) {
       total_price += Number(tab_value[j].innerText);
