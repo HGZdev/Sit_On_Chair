@@ -677,7 +677,7 @@ textarea:focus {
 
 .form2 img:first-child {
   width: 100%;
-  padding: 0 70px 20px;
+  padding: 0 70px 20px 0px;
   border: none;
 }
 
@@ -695,9 +695,9 @@ textarea:focus {
 }
 
 #submit {
-  width: 100%;
+  width: 80%;
   height: 4rem;
-  margin: 20px 0;
+  margin: 20px 100px 20px 0;
   color: $color_1;
   font-family: inherit;
   font-size: 2.4rem;
@@ -709,6 +709,10 @@ textarea:focus {
   display: table;
   clear: both;
   content: " ";
+}
+
+footer {
+  padding-top: 30px;
 }
 
 footer p {
@@ -723,7 +727,7 @@ footer img {
 }
 
 footer .logo {
-  padding: 0 20px 30px;
+  padding: 0 40px 30px;
   color: $color_5;
   font-size: 1.3rem;
 }
