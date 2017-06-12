@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-  // Zadanie 2 Ukrycie banneru - Metoda II - JS
+  // Ukrywany banner - Metoda II - JS event
 
   var content_img = document.querySelectorAll('.content_img')[1];
   var element_h3 = content_img.querySelector('h3');
@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     element_h3.style.display = "block";
   })
 
-  // Zadanie 3 - Slider
+
+  // Slider
 
   var button = document.querySelectorAll('.slider button');
   var btn_prev = button[0];
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
 
-  // Zadanie 4 - Application
+  // Payment calculator
 
   var form = document.querySelector('.form');
   var list_arrows = form.querySelectorAll('.list_arrow');
@@ -67,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
     list_panels[i].style.display = "none";
     list_arrows[i].addEventListener('click', function(event) {
       var list_panel = this.parentElement.children[2];
-      // console.log(list_panel.style.display); // test
       if (list_panel.style.display === "block") {
         list_panel.style.display = "none";
       } else {
