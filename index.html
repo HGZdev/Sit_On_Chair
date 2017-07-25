@@ -3,28 +3,25 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Sit on chair</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Sit On Chair</title>
+    <link rel="stylesheet" href="dist/out.css">
+    <script type="text/javascript" src="dist/out.js"> </script>
   </head>
 
   <body>
 
-    <section class="head">
-      <header class="container">
-
-        <div class="logo">
+    <header class="header">
+      <div class="container flex">
+        <div class="col-6 logo">
           <h1>
-            SIT <span>ON</span> CHAIR
+              SIT <span>ON</span> CHAIR
           </h1>
         </div>
+        <div class="col-6 menu">
+          <ul class="outerMenu">
+            <li><a href='#'>O FIRMIE</a>
 
-        <nav class="nav_header">
-          <ul class="mainMenu">
-            <li class="hasChildren">
-
-              <a href='#'>O FIRMIE</a>
-              <ul class="subMenu">
-                <div class="triangle"></div>
+              <ul class="innerMenu">
                 <li><a href='#'>Aktualności</a></li>
                 <li><a href='#'>Nasz team</a></li>
                 <li><a href='#'>Historia</a></li>
@@ -34,182 +31,133 @@
             <li><a href='#'>GALERIA</a></li>
             <li><a href='#'>KONTAKT</a></li>
           </ul>
-        </nav>
-
-      </header>
-    </section>
+        </div>
+      </div>
+    </header>
 
     <section class="slider">
-      <div class="container">
+      <div class="container flex">
+        <div class="col-1 prev">
+          <</div>
+            <div class="col-5 image"></div>
+            <div class="col-6 article">
 
-        <button type='button' name='button' class="prev"><</button>
+              <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+              <p>
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+                Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+                Ut molestie a, ultricies porta urna.
+              </p>
+              <div class='button'>
+                <a href="#">
+                  ZOBACZ WIĘCEJ
+                </a>
+              </div>
 
-        <article class='slider_img'>
-          <img src="./images/black_chair.png" alt="chair" data-index="0">
-        </article>
-        <article class="slider_txt">
-          <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-          </p>
-          <div class='button'>
-            <a href="#">
-            ZOBACZ WIĘCEJ
-          </a>
-          </div>
-        </article>
-
-        <button type='button' name='button' class="next">></button>
-
-      </div>
+            </div>
+            <div class="col-1 next">></div>
+        </div>
     </section>
 
     <section class="content">
-      <div class="container">
+      <div class="container flex">
+        <div class="col-3 image_box">
+          <img src="./dist/images/box1_img.jpg" alt="CLAIR">
+          <h3>Chair CLAIR</h3>
+        </div>
+        <div class="col-1 space"></div>
+        <div class="col-3 image_box">
+          <img src="./dist/images/box2_img.jpg" alt="MARGARITA">
+          <h3>Chair MARGARITA</h3>
 
-        <article class="content_img">
-          <div>
-            <img src="./images/box1_img.jpg" alt="CLAIR">
-            <h3>Chair CLAIR</h3>
-          </div>
-
-        </article>
-        <article class="content_img">
-          <div>
-            <img src="./images/box2_img.jpg" alt="MARGARITA">
-            <h3>Chair MARGARITA</h3>
-          </div>
-
-        </article>
-        <article class="content_txt">
-          <div>
-            <h3>Finds all inputs</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.
-            </p>
-            <p>
-              Excepteur sint occaecat cupidatat non proident.
-            </p>
-          </div>
-        </article>
-
+        </div>
+        <div class="col-1 space"></div>
+        <div class="col-3 article_box">
+          <h3>Finds all inputs</h3>
+          <p>
+            Finds all inputs that are not checked and highlights the next sibling span. Notice there is
+            no change when clicking the checkboxes since no click events have been linked.
+            <br /> <br /> Notice there is no change when clicking the checkboxes since no click
+            events have been
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="prices">
-      <div class="container">
-
-        <h1 class="cennik">CENNIK</h1>
-
-        <article class="price_plan basic">
-          <div class="border">
-            <div class="circle_out">
-              <div class="circle_in"></div>
-            </div>
-            <h1>BASIC PLAN</h1>
-            <div class="price_info">
-              <p>
-                <span>85</span>99
-              </p>
-              <p>
-                PLN/MSC
-              </p>
-            </div>
-            <p>
-              Zakup towaru + dowóz
-            </p>
-            <p>
-              Serwis
-            </p>
-            <div class='button'>
-              <a href="#">
-              DOŁĄCZ
-            </a>
+    <section class="price_plans">
+      <div class="container flex">
+        <header class="col-12 title">
+          <h3>CENNIK</h3></header>
+        <div class="col-3 flex plan">
+          <div class="col-12 plan_title">BASIC PLAN</div>
+          <div class="col-12 price_box">
+            <div class="circle">
+              <div class="price">
+                85<span class="fraction">99</span ><br /><span class="unit">PLN/MSC</span>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="price_plan standard checked">
-          <div class="border">
-            <div class="circle_out">
-              <div class="circle_in"></div>
-            </div>
-            <h1>BASIC PLAN</h1>
-            <div class="price_info">
-              <p>
-                <span>95</span>99
-              </p>
-              <p>
-                PLN/MSC
-              </p>
-            </div>
-            <p>
-              Zakup towaru + dowóz
-            </p>
-            <p>
-              Serwis
-            </p>
-            <p>
-              Gwarancja X lat
-            </p>
-
-            <div class='button'>
-              <a href="#">
+          <div class="col-12 feature">Zakup towaru + dowóz</div>
+          <div class="col-12 feature">Serwis</div>
+          <div class="col-12 feature empty">&nbsp</div>
+          <div class="col-12 feature empty">&nbsp</div>
+          <div class='col-12 button'>
+            <a href="#">
               DOŁĄCZ
             </a>
+          </div>
+        </div>
+        <div class="col-1 space"></div>
+        <div class="col-3 flex plan">
+          <div class="col-12 plan_title">STANDARD PLAN</div>
+          <div class="col-12 price_box">
+            <div class="circle">
+              <div class="price">
+                95<span class="fraction">99</span ><br /><span class="unit">PLN/MSC</span>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="price_plan advanced">
-          <div class="border">
-            <div class="circle_out">
-              <div class="circle_in"></div>
-            </div>
-            <h1>BASIC PLAN</h1>
-            <div class="price_info">
-              <p>
-                <span>211</span>99
-              </p>
-              <p>
-                PLN/MSC
-              </p>
-            </div>
-            <p>
-              Zakup towaru + dowóz
-            </p>
-            <p>
-              Serwis
-            </p>
-            <p>
-              Gwarancja X lat
-            </p>
-            <p>
-              Porady projektanta
-            </p>
-            <div class='button'>
-              <a href="#">
+          <div class="col-12 feature">Zakup towaru + dowóz</div>
+          <div class="col-12 feature">Serwis</div>
+          <div class="col-12 feature">Gwarancja 5 lat</div>
+          <div class="col-12 feature empty">&nbsp</div>
+          <div class='col-12 button'>
+            <a href="#">
               DOŁĄCZ
             </a>
+          </div>
+        </div>
+        <div class="col-1 space"></div>
+        <div class="col-3 flex plan">
+          <div class="col-12 plan_title">ADVANCE PLAN</div>
+          <div class="col-12 price_box">
+            <div class="circle">
+              <div class="price">
+                211<span class="fraction">00</span ><br /><span class="unit">PLN/MSC</span>
+              </div>
             </div>
           </div>
-        </article>
-
-
+          <div class="col-12 feature">Zakup towaru + dowóz</div>
+          <div class="col-12 feature">Serwis</div>
+          <div class="col-12 feature">Gwarancja 5 lat</div>
+          <div class="col-12 feature">Porady projektanta</div>
+          <div class='col-12 button'>
+            <a href="#">
+              DOŁĄCZ
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="application">
-      <div class="main_width container">
-        <section class="choice_part inline">
-          <header>
+    <section class="shop">
+      <form class="container flex calculator">
+
+        <div class="col-3 flex choice_part">
+          <header class="col-12 titleHeader">
             <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
-            <span class="green_bell"></span>
           </header>
-
-          <div class="form">
+          <div class="col-12 lists">
             <div class="drop_down_list">
               <span class="list_label">Wybierz rodzaj</span>
               <span class="list_arrow"></span>
@@ -223,101 +171,119 @@
               <span class="list_label">Wybierz kolor</span>
               <span class="list_arrow"></span>
               <ul class="list_panel" id='color'>
-                <li data-price='50'>Czerwony</li>
-                <li data-price='40'>Czarny</li>
-                <li data-price='20'>Pomarańczowy</li>
+                <li data-price='50'>czerwony</li>
+                <li data-price='40'>czarny</li>
+                <li data-price='20'>pomarańczowy</li>
               </ul>
             </div>
-            <div class="drop_down_list" >
+            <div class="drop_down_list">
               <span class="list_label">Wybierz materiał</span>
               <span class="list_arrow"></span>
               <ul class="list_panel" id="pattern">
-                <li data-price='0'>Tkanina</li>
-                <li data-price='47'>Skóra</li>
+                <li data-price='0'>tkanina</li>
+                <li data-price='47'>skóra</li>
               </ul>
             </div>
-            <div class="checkbox check-box">
+            <div class="checkbox_panel flex">
               <input type="checkbox" id="transport" data-price="200">
-              <label for="transport">Transport</label>
+              <label for="transport" id="checkbox_label">Transport</label>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="image_part inline">
-          <img src="images/red_chair.png">
-        </section>
+        <div class="col-1 space"></div>
 
-        <section class="summary_part inline">
-          <header class="align_right">
+        <div class="col-3 image_part"></div>
+
+        <div class="col-1 space"></div>
+
+        <div class="col-3 flex summary_part">
+          <header class="col-12 titleHeader">
             <h3>PODSUMOWANIE</h3>
-            <span class="green_bell"></span>
           </header>
+          <div class="summary_panel flex">
 
-          <div class="summary_panel">
-            <div class="panel_left">
-              <h4 class="title">Twój fotel</h4>
-              <span class="color"></span>
-              <span class="pattern"></span>
-              <span class="transport"></span>
+            <div class="col-12 flex title_row">
+              <h4 class="col-8 title name">Twój fotel</h4>
+              <h4 class="col-4 title value"></h4>
             </div>
-            <div class="panel_right">
-              <h4 class="title value"></h4>
-              <span class="color value"></span>
-              <span class="pattern value"></span>
-              <span class="transport value"></span>
+            <div class="col-12 flex color_row">
+              <span class="col-8 color name"></span>
+              <span class="col-4 color value"></span>
             </div>
-            <div class="sum_label">SUMA</div>
-            <div class="sum"><strong></strong></div>
+            <div class="col-12 flex pattern_row">
+              <span class="col-8 pattern name"></span>
+              <span class="col-4 pattern value"></span>
+            </div>
+            <div class="col-12 flex transport_row">
+              <span class="col-8 transport name"></span>
+              <span class="col-4 transport value"></span>
+            </div>
+            <div class="col-12 flex sum_row">
+              <span class="col-8 sum_label">SUMA</span>
+              <span class="col-4 sum"><strong></strong></span>
+            </div>
           </div>
-          <a href="" class="green_button">Zamawiam</a>
-        </section>
-      </div>
+
+          <div class='button'>
+            <a href="" id="button_order">Zamawiam</a>
+          </div>
+        </div>
+      </form>
     </section>
 
     <section class="contact">
-      <div class="container">
-        <h1 class="cennik">KONTAKT</h1>
-        <article class="form1">
-          <form>
-            <fieldset>
+      <form class="container flex">
+        <header class="col-12 title">
+          <h3>KONTAKT</h3></header>
 
-              <input type="text" name="name" value="" placeholder="Imię">
-              <input type="email" placeholder="Email">
-              <textarea name="about" rows="4" cols="15" value="" placeholder="Wiadomość"></textarea>
+        <div class="col-1 flex left_part">
+          <div class="col-12 input_box">
+            <input type="text" name="name" value="" placeholder="Imię" />
+          </div>
+          <div class="col-12 input_box">
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="col-12 input_box">
+            <textarea name="about" flexs="4" cols="15" value="" placeholder="Wiadomość"></textarea>
+          </div>
 
-            </fieldset>
-          </form>
-        </article>
+        </div>
 
-        <article class="form2">
-          <form>
-            <img src="./images/red_chair.png" alt="chair" /> <br />
-            <img src="./images/form_ok.jpg" alt="checked" />
-            <p>Zgadzam się na przetwarzanie danych osobowych</p>
-            <button type="submit" id='submit' class="button">Wyślij</button>
-          </form>
-        </article>
+        <div class="col-1 flex right_part">
+          <img id="chair" src="./dist/images/red.png" alt="chair" />
+          <div class="flex confirmation ">
+            <div class="image"></div>
+            <div class="text">Zgadzam się na przetwarzanie danych osobowych
+            </div>
+          </div>
+          <button id='submit' type="submit">WYŚLIJ</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="footer">
+      <div class="container flex">
+
+        <div class="col-7 copyright">
+          Copyright 2014 | All Right Reserved - Sit On Chair
+        </div>
+
+        <div class="col-3 links">
+          <img src="./dist/images/twitter.png" alt="twitter" />
+          <img src="./dist/images/pinterest.png" alt="pinterest" />
+          <img src="./dist/images/vimeo.png" alt="vimeo" />
+          <img src="./dist/images/flickr.png" alt="flickr" />
+        </div>
+        <div class="col-2 logo">
+          <h1>
+              SIT <span>ON</span> CHAIR
+          </h1>
+        </div>
 
       </div>
     </section>
-    <footer class="container">
-      <p>
-        Copyright 2014 | All Right Reserved - Sit On Chair
-      </p>
 
-      <h1 class="logo">
-        SIT <span>ON</span> CHAIR
-      </h1>
-
-      <img src="./images/twitter.png" alt="twitter" />
-      <img src="./images/pinterest.png" alt="pinterest" />
-      <img src="./images/vimeo.png" alt="vimeo" />
-      <img src="./images/flickr.png" alt="flickr" />
-
-    </footer>
-
-    <script src="js/main.js" type="text/javascript"></script>
-    </script>
   </body>
 
 </html>

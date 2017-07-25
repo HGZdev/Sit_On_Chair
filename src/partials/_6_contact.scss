@@ -1,0 +1,101 @@
+// Contact
+
+.contact {
+    background-color: $c1;
+
+    .flex {
+        .title {
+            position: relative;
+            padding: 36px 0 66px;
+            text-align: left;
+            font-size: 22px;
+            line-height: 0.926;
+
+            &:before {
+                position: absolute;
+                bottom: 50px;
+                left: 0;
+                width: 33%;
+                height: 7px;
+                content: "";
+                background-color: $c3;
+            }
+        }
+
+        .flex.left_part {
+            flex-grow: 1;
+            align-content: flex-start;
+
+            .input_box {
+                height: 100px;
+                padding-bottom: 28px;
+
+                input,
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    padding: 15px;
+                    color: $c11;
+                    border: 1px solid $c3;
+                    font-size: 33px;
+
+                    &::placeholder,
+                    &::placeholder {
+                        color: $c8;
+                    }
+
+                    &.uneditable-input:focus,
+                    &:focus,
+                    &[type]:focus {
+                        border: 3px solid $c4;
+                    }
+                }
+
+                textarea {
+                    height: 187px;
+                }
+            }
+        }
+
+        .right_part {
+            width: 416px;
+            padding: 0 0 90px 56px;
+            align-content: flex-start;
+
+            #chair {
+                height: 188px;
+            }
+
+            .confirmation {
+                padding: 30px 0 37px;
+
+                .image {
+                    width: 52px;
+                    height: 52px;
+                    border: 1px solid $c3;
+                    background-image: url('../dist/images/form_ok.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .text {
+                    width: 85%;
+                    padding: 3px 0 0 15px;
+                    color: $c9;
+                    font-size: 20px;
+                    line-height: 1.119;
+                }
+            }
+
+            #submit {
+                width: 343px;
+                height: 71px;
+                color: $c1;
+                border-radius: 8px;
+                background-color: $c4;
+                font-size: 34px;
+                font-weight: bold;
+            }
+        }
+    }
+}

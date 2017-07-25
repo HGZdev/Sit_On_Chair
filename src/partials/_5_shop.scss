@@ -1,0 +1,207 @@
+// Shop
+
+.shop {
+    background-color: $c6;
+
+    .calculator.flex {
+        .space {
+            width: 28px;
+        }
+
+        .titleHeader {
+            position: relative;
+            padding: 36px 0 66px;
+            text-align: left;
+            color: $c12;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 0.926;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                width: 80%;
+                height: 7px;
+                content: "";
+                background-color: $c3;
+            }
+        }
+
+        .choice_part.flex {
+            flex-grow: 1;
+            align-content: flex-start;
+
+            .titleHeader:before {
+                bottom: 50px;
+            }
+
+            .lists {
+                .drop_down_list {
+                    position: relative;
+                    margin: 22px 12px;
+                    padding: 8px 12px;
+                    border: 1px solid $c3;
+                    background-color: $c1;
+                    font-size: 28px;
+
+                    .list_label {
+                        width: 100%;
+                        color: $c7;
+                    }
+
+                    .list_arrow {
+                        position: absolute;
+                        top: 50%;
+                        right: 12px;
+                        transform: translate(0, -25%);
+                        border: 1.5rem solid $c0;
+                        border-top: 1.5rem solid $c3;
+                    }
+
+                    .list_panel {
+                        position: absolute;
+                        z-index: 999;
+                        top: 120%;
+                        left: 0;
+                        width: 100%;
+                        padding: 0 15px 10px;
+                        border: 1px solid $c11;
+                        background-color: $c1;
+
+                        li {
+                            width: 100%;
+                            margin-top: 10px;
+                            cursor: pointer;
+                            color: $c12;
+                            background-color: $c1;
+                            font-size: 25px;
+
+                            &:hover {
+                                background-color: $c3;
+                            }
+                        }
+                    }
+                }
+
+                .checkbox_panel.flex {
+                    padding: 30px 30px 30px 0;
+                    align-content: flex-start;
+
+                    #transport {
+                        position: absolute;
+                        display: block;
+                        width: 48px;
+                        height: 48px;
+                        cursor: pointer;
+                        opacity: 0;
+
+                        &:checked + #checkbox_label::after {
+                            display: block;
+                        }
+                    }
+
+                    #checkbox_label {
+                        position: relative;
+                        display: block;
+                        padding: 10px 0 0 65px;
+                        cursor: pointer;
+                        color: $c11;
+                        font-size: 28px;
+                        line-height: 120%;
+
+                        &::after,
+                        &::before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 48px;
+                            height: 48px;
+                            content: "";
+                            border: 1px solid $c3;
+                            background-color: $c1;
+                        }
+
+                        &::after {
+                            display: none;
+                            border: 0;
+                            background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .image_part {
+            background-image: url('../dist/images/orange.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            flex-grow: 1;
+        }
+
+        .summary_part.flex {
+            flex-grow: 1;
+            align-content: flex-start;
+            justify-content: center;
+
+            .titleHeader {
+                text-align: right;
+
+                &:before {
+                    bottom: 50px;
+                    left: 40%;
+                    width: 60%;
+                }
+            }
+
+            .summary_panel.flex {
+                width: 100%;
+                height: 250px;
+                padding: 10px;
+                color: $c12;
+                background-color: $c1;
+                font-size: 23px;
+                align-content: flex-start;
+
+                & > div {
+                    line-height: 2;
+
+                    & > *:last-child {
+                        text-align: right;
+                        border-left: 1px solid $c7;
+                    }
+                }
+
+                .title_row {
+                    color: $c3;
+                    font-weight: bold;
+                }
+
+                .sum_row {
+                    border-top: 1px solid $c7;
+                    font-weight: bold;
+                }
+            }
+
+            .button {
+                position: relative;
+                width: 200px;
+                height: 53px;
+                margin: 20px 0 40px;
+                text-align: center;
+                border-radius: 9px;
+                background-color: $c4;
+
+                #button_order {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: $c1;
+                    font-size: 24px;
+                    line-height: 53px;
+                }
+            }
+        }
+    }
+}

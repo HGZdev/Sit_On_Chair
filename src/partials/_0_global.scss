@@ -1,0 +1,30 @@
+//
+// Global grid settings
+//
+
+$cols: 12;
+$width-base: (100%/$cols);
+
+.container {
+    position: relative;
+    max-width: 1056px;
+    height: 100%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+[class*='col-'] {
+    width: 100%;
+    min-height: 1px;
+}
+@media only screen and (min-width : 600px) {
+     @for $i from 1 through $cols{
+        .col-#{$i} {
+            width: $width-base * $i;
+        }
+    }
+}
