@@ -19,6 +19,7 @@
         .next,
         .prev {
             position: absolute;
+            width: 20%;
             z-index: 999;
             color: $c0;
             background-color: $c0;
