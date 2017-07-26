@@ -1,20 +1,20 @@
 # Sit-On-Chair
+
+**Live demo:** https://hgzwebdesign.github.io/Sit_On_Chair
+
 The project of an online furniture shop. My first website project made during programming bootcamp in CodersLab.
 
-###### Technologies used in this project:
+### Technologies used in this project:
 - HTML5
 - CSS3 & SASS
 - JavaScript (ES6)
 - Gulp
 - Webpack
 
-## Live Demo:
-https://hgzwebdesign.github.io/Sit_On_Chair/
-
-## Preview:
+### Preview:
 ![alt txt](dist/images/template.jpg)
 
-## Workshop tasks description:
+### Workshop tasks description:
 Celem tego warsztatu było wierne odtworzenie warstwy wizualnej strony z pliku template.jpg.
 
 Ponadto projekt miał zawierać kilka funkcjonalności w poszczególnych sekcjach:
@@ -30,5 +30,5 @@ Ponadto projekt miał zawierać kilka funkcjonalności w poszczególnych sekcjac
   - pole SUMA ma zawierać sumę wybranych OPCJI wraz z kwotą transportu
 - Sekcja KONTAKT: formularz kontaktowy
 
-## License
+### License
 CodersLab

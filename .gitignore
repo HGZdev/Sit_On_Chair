@@ -1,12 +1,10 @@
+.gitignore
+
 node_modules
 node_modules/*
 package.json
 webpack.config.js
 gulpfile.js
-.gitignore
-_gitignore
 
-src/fonts
-src/fonts/*
 warsztat_opis
 warsztat_opis/*
