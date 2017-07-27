@@ -21,7 +21,7 @@ $width-base: (100%/$cols);
     width: 100%;
     min-height: 1px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width : 600px) {
      @for $i from 1 through $cols{
         .col-#{$i} {
             width: $width-base * $i;
