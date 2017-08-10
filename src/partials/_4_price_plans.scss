@@ -1,195 +1,199 @@
-// Price plans
+/**
+ * -----------------------------------------------------------------------
+ *                               Price plans
+ * -----------------------------------------------------------------------
+ */
 
 .price_plans {
-    padding-bottom: 68px;
-    background-color: $c5;
+  padding-bottom: 68px;
+  background-color: $c5;
 
-    & > .flex {
-        text-align: center;
+  & > .flex {
+    text-align: center;
 
-        .space {
-            width: 28px;
-        }
-
-        .title {
-            position: relative;
-            padding: 47px 0 97px;
-            text-align: left;
-            font-size: 22px;
-            line-height: 0.926;
-
-            &:before {
-                position: absolute;
-                bottom: 80px;
-                left: 0;
-                width: 33%;
-                height: 7px;
-                content: "";
-                background-color: $c3;
-            }
-        }
-
-        .flex.plan {
-            position: relative;
-            border: 2px solid $c8;
-            background-color: $c6;
-            flex-grow: 1;
-
-            &:before {
-                position: absolute;
-                top: -1%;
-                left: 50%;
-                width: 57px;
-                height: 57px;
-                content: "";
-                transform: translate(-50%, -50%);
-                border: 2px solid $c8;
-                border-radius: 50%;
-                background-color: $c1;
-            }
-
-            &:after {
-                position: absolute;
-                top: -1%;
-                left: 50%;
-                width: 57px;
-                width: 27px;
-                height: 57px;
-                height: 27px;
-                content: "";
-                transform: translate(-50%, -50%);
-                border-radius: 50%;
-                background-color: $c8;
-            }
-
-            .plan_title {
-                padding: 31px 0 193px;
-                color: $c3;
-                font-size: 26px;
-                line-height: 0.769;
-            }
-
-            .price_box {
-                position: relative;
-
-                .circle {
-                    position: absolute;
-                    bottom: -33px;
-                    left: 50%;
-                    width: 131px;
-                    height: 131px;
-                    transform: translate(-50%, -50%);
-                    border: 2px solid $c8;
-                    border-radius: 50%;
-                    background-color: $c1;
-
-                    .price {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: $c8;
-                        font-size: 45px;
-                        font-weight: 600;
-                        line-height: 22px;
-
-                        .fraction {
-                            height: 46px;
-                            font-size: 16px;
-                            font-weight: normal;
-                        }
-
-                        .unit {
-                            color: $c8;
-                            font-size: 16px;
-                            font-weight: normal;
-                        }
-                    }
-                }
-            }
-
-            .feature {
-                color: $c11;
-                font-size: 24px;
-                line-height: 46px;
-            }
-
-            .feature:nth-child(2n+1) {
-                background-color: $c7;
-            }
-
-            .feature:nth-child(2n) {
-                background-color: $c6;
-            }
-
-            .feature.empty {
-                background-color: $c6;
-            }
-
-            .button {
-                position: relative;
-                height: 74px;
-
-                a {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: 122px;
-                    height: 34px;
-                    transform: translate(-50%, -50%);
-                    color: $c1;
-                    border-radius: 8px;
-                    background-color: $c3;
-                    font-size: 16px;
-                    line-height: 34px;
-                }
-            }
-
-            &:hover {
-                border: 2px solid $c3;
-                background-color: $c3;
-
-                &:before {
-                    border: 2px solid $c3;
-                    background-color: $c3;
-                }
-
-                &:after {
-                    background-color: $c1;
-                }
-
-                .plan_title {
-                    color: $c1;
-                }
-
-                .price_box {
-                    .circle {
-                        border: 2px solid $c1;
-                        background-color: $c1;
-
-                        .price {
-                            color: $c3;
-
-                            span {
-                                color: $c3;
-                            }
-                        }
-                    }
-                }
-
-                .feature:nth-child(1) {
-                    background-color: $c1;
-                }
-
-                .feature.empty {
-                    background-color: $c3;
-                }
-
-                .button a {
-                    color: $c3;
-                    background-color: $c1;
-                }
-            }
-        }
+    .space {
+      width: 28px;
     }
+
+    .title {
+      position: relative;
+      padding: 47px 0 97px;
+      text-align: left;
+      font-size: 22px;
+      line-height: 0.926;
+
+      &:before {
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        width: 33%;
+        height: 7px;
+        content: "";
+        background-color: $c3;
+      }
+    }
+
+    .flex.plan {
+      position: relative;
+      border: 2px solid $c8;
+      background-color: $c6;
+      flex-grow: 1;
+
+      &:before {
+        position: absolute;
+        top: -1%;
+        left: 50%;
+        width: 57px;
+        height: 57px;
+        content: "";
+        transform: translate(-50%, -50%);
+        border: 2px solid $c8;
+        border-radius: 50%;
+        background-color: $c1;
+      }
+
+      &:after {
+        position: absolute;
+        top: -1%;
+        left: 50%;
+        width: 57px;
+        width: 27px;
+        height: 57px;
+        height: 27px;
+        content: "";
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: $c8;
+      }
+
+      .plan_title {
+        padding: 31px 0 193px;
+        color: $c3;
+        font-size: 26px;
+        line-height: 0.769;
+      }
+
+      .price_box {
+        position: relative;
+
+        .circle {
+          position: absolute;
+          bottom: -33px;
+          left: 50%;
+          width: 131px;
+          height: 131px;
+          transform: translate(-50%, -50%);
+          border: 2px solid $c8;
+          border-radius: 50%;
+          background-color: $c1;
+
+          .price {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $c8;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 22px;
+
+            .fraction {
+              height: 46px;
+              font-size: 16px;
+              font-weight: normal;
+            }
+
+            .unit {
+              color: $c8;
+              font-size: 16px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+
+      .feature {
+        color: $c11;
+        font-size: 24px;
+        line-height: 46px;
+      }
+
+      .feature:nth-child(2n+1) {
+        background-color: $c7;
+      }
+
+      .feature:nth-child(2n) {
+        background-color: $c6;
+      }
+
+      .feature.empty {
+        background-color: $c6;
+      }
+
+      .button {
+        position: relative;
+        height: 74px;
+
+        a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 122px;
+          height: 34px;
+          transform: translate(-50%, -50%);
+          color: $c1;
+          border-radius: 8px;
+          background-color: $c3;
+          font-size: 16px;
+          line-height: 34px;
+        }
+      }
+
+      &:hover {
+        border: 2px solid $c3;
+        background-color: $c3;
+
+        &:before {
+          border: 2px solid $c3;
+          background-color: $c3;
+        }
+
+        &:after {
+          background-color: $c1;
+        }
+
+        .plan_title {
+          color: $c1;
+        }
+
+        .price_box {
+          .circle {
+            border: 2px solid $c1;
+            background-color: $c1;
+
+            .price {
+              color: $c3;
+
+              span {
+                color: $c3;
+              }
+            }
+          }
+        }
+
+        .feature:nth-child(1) {
+          background-color: $c1;
+        }
+
+        .feature.empty {
+          background-color: $c3;
+        }
+
+        .button a {
+          color: $c3;
+          background-color: $c1;
+        }
+      }
+    }
+  }
 }
