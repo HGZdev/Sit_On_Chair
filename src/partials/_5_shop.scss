@@ -12,7 +12,7 @@
       width: 28px;
     }
 
-    .titleHeader {
+    .header_title {
       position: relative;
       padding: 36px 0 66px;
       text-align: left;
@@ -33,7 +33,7 @@
       flex-grow: 1;
       align-content: flex-start;
 
-      .titleHeader:before {
+      .header_title:before {
         bottom: 50px;
       }
 
@@ -129,7 +129,7 @@
       align-content: flex-start;
       justify-content: center;
 
-      .titleHeader {
+      .header_title {
         text-align: right;
 
         &:before {
