@@ -1,6 +1,6 @@
 # Sit-On-Chair
 
-**Live Demo:** https://hgzwebdesign.github.io/Sit_On_Chair
+**Live Demo:** https://hgzdev.github.io/Sit_On_Chair
 
 The project of an online furniture shop. My first website project prepared during programming bootcamp in CodersLab.
 
